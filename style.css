@@ -1,0 +1,325 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:linear-gradient(180deg,#FFF8E7,#FFF3C4,#FFE18A);
+    color:#5D4037;
+}
+
+/* ===== HEADER ===== */
+
+.inicio{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.inicio h1{
+    font-family:"Great Vibes",cursive;
+    font-size:6rem;
+    color:#C58A00;
+}
+
+.inicio h2{
+    font-size:3rem;
+    margin:20px 0;
+}
+
+.inicio p{
+    font-size:1.3rem;
+    max-width:700px;
+}
+
+button{
+    margin-top:30px;
+    border:none;
+    cursor:pointer;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:1.1rem;
+    background:#F6C90E;
+    color:#5D4037;
+    transition:.4s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    background:#D4A017;
+}
+
+/* ===== SEÇÕES ===== */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:#A66A00;
+    margin-bottom:40px;
+}
+
+section p{
+    font-size:1.1rem;
+    line-height:2;
+    text-align:center;
+}
+
+/* ===== POEMA ===== */
+
+.poema{
+    background:#FFFDF7;
+}
+
+.poema p{
+    max-width:900px;
+    margin:20px auto;
+}
+
+/* ===== GALERIA ===== */
+
+.fotos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.fotos img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.fotos img:hover{
+    transform:scale(1.05) rotate(2deg);
+}
+
+/* ===== HISTÓRIA ===== */
+
+.historia{
+    background:#FFF8E7;
+}
+
+/* ===== MOTIVOS ===== */
+
+.motivos{
+    text-align:center;
+}
+
+#motivo{
+    margin-top:35px;
+    color:#8B5A00;
+    font-size:1.7rem;
+    min-height:80px;
+}
+
+/* ===== CARTA ===== */
+
+.carta{
+    background:#FFFDF7;
+    text-align:center;
+}
+
+.envelope{
+    margin:30px auto;
+}
+
+#textoCarta{
+    display:none;
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+/* ===== RECEITAS ===== */
+
+details{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #FFFDF7;
+    border: 2px solid #F6C90E;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: .4s;
+}
+
+details:hover{
+    box-shadow: 0 12px 30px rgba(0,0,0,.2);
+}
+
+summary{
+    cursor: pointer;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #A66A00;
+    text-align: center;
+    padding: 15px;
+    transition: .3s;
+}
+
+summary::-webkit-details-marker{
+    display: none;
+}
+
+summary::after{
+    content: " ";
+}
+
+details[open] summary{
+    margin-bottom: 25px;
+    color: #C58A00;
+}
+
+details iframe{
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+details iframe:hover{
+    transform: scale(1.03);
+}
+
+/* Centraliza os vídeos */
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+/* ===== CONTADOR ===== */
+
+.numeros{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.numeros div{
+    width: 220px;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+    padding: 20px;
+}
+
+.numeros h3{
+    font-size:3rem;
+    color:#C58A00;
+}
+
+.numeros p{
+    margin-top:10px;
+}
+
+/* ===== ORAÇÃO ===== */
+
+.oracao{
+    background:#FFFDF7;
+}
+
+/* ===== SURPRESA ===== */
+
+.surpresa{
+    text-align:center;
+}
+
+/* ===== POPUP ===== */
+
+#popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.caixa{
+    width:90%;
+    max-width:600px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    animation:aparecer .5s;
+}
+
+.caixa h2{
+    margin-bottom:20px;
+}
+
+@keyframes aparecer{
+
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:768px){
+
+.inicio h1{
+    font-size:4rem;
+}
+
+.inicio h2{
+    font-size:2rem;
+}
+
+section h2{
+    font-size:2rem;
+}
+
+.numeros{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
