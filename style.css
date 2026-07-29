@@ -300,6 +300,79 @@ details iframe:hover{
     }
 
 }
+#animacaoCoracao{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#coracao{
+
+    width:260px;
+    height:260px;
+
+}
+
+#linhaCoracao{
+
+    fill:none;
+
+    stroke:#D4A017;
+
+    stroke-width:8;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+
+    stroke-dasharray:900;
+    stroke-dashoffset:900;
+
+}
+
+.desenhar{
+
+    animation:desenhar 2.8s ease forwards;
+
+}
+
+@keyframes desenhar{
+
+    to{
+
+        stroke-dashoffset:0;
+
+    }
+
+}
+
+#mensagemSurpresa{
+
+    display:none;
+
+    animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
 
 /* ===== RESPONSIVO ===== */
 

@@ -76,30 +76,49 @@ abrirCarta.addEventListener("click", () => {
 // ==============================
 // POPUP FINAL
 // ==============================
-
 const popup = document.getElementById("popup");
 const surpresa = document.getElementById("surpresaFinal");
 const fechar = document.getElementById("fechar");
 
-surpresa.addEventListener("click", () => {
+const animacao = document.getElementById("animacaoCoracao");
+const mensagem = document.getElementById("mensagemSurpresa");
+const coracao = document.getElementById("linhaCoracao");
 
-    popup.style.display = "flex";
+surpresa.addEventListener("click",()=>{
+
+    popup.style.display="flex";
+
+    animacao.style.display="flex";
+
+    mensagem.style.display="none";
+
+    coracao.classList.remove("desenhar");
+
+    void coracao.offsetWidth;
+
+    coracao.classList.add("desenhar");
+
+    setTimeout(()=>{
+
+        animacao.style.display="none";
+
+        mensagem.style.display="block";
+
+    },3000);
 
 });
 
-fechar.addEventListener("click", () => {
+fechar.addEventListener("click",()=>{
 
-    popup.style.display = "none";
+    popup.style.display="none";
 
 });
 
-// Fecha clicando fora da caixa
+window.addEventListener("click",(e)=>{
 
-window.addEventListener("click", (evento)=>{
+    if(e.target===popup){
 
-    if(evento.target == popup){
-
-        popup.style.display = "none";
+        popup.style.display="none";
 
     }
 
